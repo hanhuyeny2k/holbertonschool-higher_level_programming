@@ -1,1 +1,0 @@
-The tasks of this project are run Python file; run inline; use print; print integer; print float; print string; play wiht strings; copy-cut-paste; create a new sentence; print Easter Egg file; check linked list cycle.
