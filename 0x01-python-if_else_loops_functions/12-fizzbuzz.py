@@ -9,5 +9,5 @@ def fizzbuzz():
             print("Buzz", end="")
         else:
             print("{:d}".format(a), end="")
-        if a != 100:
+        if a != 101:
             print(" ", end="")
