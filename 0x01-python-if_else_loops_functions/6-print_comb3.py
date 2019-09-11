@@ -7,4 +7,3 @@ for i in range(0, 10):
                 print("{:d}".format(j))
             else:
                 print("{:d}".format(j), end=", ")
-
