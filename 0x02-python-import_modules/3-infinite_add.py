@@ -4,7 +4,7 @@ if __name__ == "__main__":
     argc = len(sys.argv)
     combine = 0
     if argc == 1:
-        print("0")
+        print("{}".format(combine))
     else:
         for i in range(1, argc):
             combine = combine + int(sys.argv[i])
