@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 import sys
-from add_0 import add
 if __name__ == "__main__":
     argc = len(sys.argv)
     combine = 0
