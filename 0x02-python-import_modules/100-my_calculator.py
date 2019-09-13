@@ -12,14 +12,14 @@ if __name__ == "__main__":
         print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
     elif sys.argv[2] == '+':
-        to_add = add(int(sys.argv[1]), int(sys.argv[3]))
+        to_add = add(a, b)
         print("{:d} + {:d} = {:d}".format(a, b, to_add))
     elif sys.argv[2] == '-':
-        to_sub = add(int(sys.argv[1]), int(sys.argv[3]))
-        print("{:d} - {:d} = {:d}".format(int(a, b, to_sub))
+        to_sub = add(a, b)
+        print("{:d} - {:d} = {:d}".format(a, b, to_sub))
     elif sys.argv[2] == '*':
-        to_mul =add(int(sys.argv[1]), int(sys.argv[3]))
+        to_mul = add(a, b)
         print("{:d} * {:d} = {:d}".format(a, b, to_mul))
     elif sys.argv[2] == '/':
-        to_div = add(int(sys.argv[1]), int(sys.argv[3]))
+        to_div = add(a, b)
         print("{:d} / {:d} = {:d}".format(a, b, to_div))
