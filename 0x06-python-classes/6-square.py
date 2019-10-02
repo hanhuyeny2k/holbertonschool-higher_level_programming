@@ -26,8 +26,10 @@ class Square:
     @position.setter
     def position(self, value):
         """Create a setter to protect putting bad data inside a square."""
-        if value < 0:
-                raise TypeError("size must be an integer")
+        if (type(value) != tuple or len != 2 or
+                type(value[0]) != int or type(value[1]) != int or
+                value < (0, 0)):
+            raise TypeError("size must be an integer")
         self.__position = value
 
     def __init__(self, size=0, position=(0, 0)):
