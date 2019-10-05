@@ -1,0 +1,49 @@
+#!/usr/bin/python3
+    """My matrix divide module"""
+
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+>>> matrix = [
+... [1, 2, 3, 4],
+... [4, 5, 6],
+... [4, 6, 2]
+... ]
+
+>>> matrix_divided(matrix, 3)
+Traceback (most recent call last):
+TypeError: Each row of the matrix must have the same size
+
+>>> matrix = [
+... [4.5, 1000, -5],
+... [90000, .89, 45]
+... ]
+
+>>> matrix_divided(matrix, 15)
+[[0.3, 66.67, -0.33], [6000.0, 0.06, 3.0]]
+
+>>> matrix = [
+... [12, 4, 9],
+... [33, 8, 58]
+... ]
+
+>>> matrix_divided(matrix, 0)
+Traceback (most recent call last):
+ZeroDivisionError: division by zero
+
+>>> matrix = [
+... ['abc'],
+... ['def']
+... ]
+
+>>> matrix_divided(matrix, 2)
+Traceback (most recent call last):
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+>>> matrix = [
+... [3, 5, 14],
+... [4, 13, 9]
+... ]
+
+>>> matrix_divided(matrix, 'h')
+Traceback (most recent call last):
+TypeError: div must be a number
