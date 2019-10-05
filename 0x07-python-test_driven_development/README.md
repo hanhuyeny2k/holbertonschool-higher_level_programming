@@ -1,6 +1,6 @@
-#Python - Test-driven development
-##Prerequisites
-###Python Scripts
+# Python - Test-driven development
+## Prerequisites
+### Python Scripts
 * Allowed editors: vi, vim, emacs
 * All the files will be interpreted/compiled on Ubuntu 14.04 LTS using python3 (version 3.4.3)
 * All the files should end with a new line
@@ -9,7 +9,7 @@
 * The code should use the PEP 8 style (version 1.7.*)
 * All the files must be executable
 * The length of the files will be tested using wc
-###Python Test Cases
+### Python Test Cases
 * Allowed editors: vi, vim, emacs
 * All the files should end with a new line
 * All the test files should be inside a folder tests
@@ -17,7 +17,7 @@
 * All the tests should be executed by using this command: python3 -m doctest ./tests/*
 * All the modules should have a documentation (python3 -c 'print(__import__("my_module").__doc__)')
 * All the functions should have a documentation (python3 -c 'print(__import__("my_module").my_function.__doc__)')
-##Compilation
+## Compilation
 `$ chmod u+x *.py`
 
 `$ ./0-main.py`
@@ -27,7 +27,7 @@
 `$ python3 -c 'print(__import__("0-add_integer").__doc__)' | wc -l`
 
 `$ python3 -c 'print(__import__("0-add_integer").add_integer.__doc__)' | wc -l`
-##Example
+## Example
 ```#!/usr/bin/python3
 add_integer = __import__('0-add_integer').add_integer
 
@@ -59,7 +59,7 @@ $ python3 -c 'print(__import__("0-add_integer").add_integer.__doc__)' | wc -l
 3
 ```
 
-##Tasks
+## Tasks
 * Write a function that adds 2 integers.
 * Write a function that divides all elements of a matrix.
 * Write a function that prints My name is <first name last name>.
