@@ -1,0 +1,11 @@
+#!/usr/bin/python3
+    """Text indentation"""
+
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+>>> text_indentation = ("""To be or not to be? \
+... That's the question!""")
+
+>>>To be or not to be?
+...That's the question!
+
