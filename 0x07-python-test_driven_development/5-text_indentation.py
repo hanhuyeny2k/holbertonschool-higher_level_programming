@@ -14,9 +14,10 @@ def text_indentation(text):
     """Prints a text with 2 new lines after each ".", "?", ":" character."""
     if type(text) != str:
         raise TypeError("text must be a string")
+    line = " "
     for e in text:
+        line += e
         if e in ".?:":
-            print(e)
-            print()
-        else:
-            print(e, end="")
+            print(line.strip(" "), end="\n\n")
+            line = ""
+    print(line.strip(" "), end="")
