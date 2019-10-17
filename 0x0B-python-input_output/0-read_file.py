@@ -1,6 +1,8 @@
 #!/bin/usr/python3
 """
     Reads a text file (UTF8) and prints it to stdout
+
+    using read_file(filename="")
 """
 
 
