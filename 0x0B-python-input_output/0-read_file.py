@@ -1,9 +1,10 @@
 #!/bin/usr/python3
 """
-Using def read_file(filename="")
+Args:
+    param1(filename) - text file passing through.
 
-to reads a text file (UTF8) and prints it to stdout:
-
+Returns:
+    None.
 """
 
 
