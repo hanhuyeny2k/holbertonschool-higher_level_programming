@@ -1,4 +1,4 @@
-#!/bin/usr/python3
+#!/usr/bin/python3
 """
 Using def read_lines(filename="", nb_lines=0)
 
@@ -20,5 +20,5 @@ def read_lines(filename="", nb_lines=0):
                 if counter == nb_lines:
                     break
                 else:
+                    counter += 1
                     print(line, end="")
-                counter += 1
