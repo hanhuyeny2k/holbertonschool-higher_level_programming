@@ -1,4 +1,4 @@
-# Python - Inheritance
+# Python - Python - Input/Output
 
 ## Prerequisites
 ### Python Scripts
