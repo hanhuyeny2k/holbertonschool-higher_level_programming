@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Use JSON module to .....???????
+Returns the dictionary description with simple data structure
 
 """
 
