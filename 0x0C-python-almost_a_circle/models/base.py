@@ -65,6 +65,6 @@ class Base:
                 my_list = []
                 dict_list = cls.from_json_string(myFile.read())
                 for a in dict_list:
-                   b =  cls.create(**a)
-                   my_list.append(b)
+                    b = cls.create(**a)
+                    my_list.append(b)
             return my_list
