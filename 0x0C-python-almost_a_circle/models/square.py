@@ -20,14 +20,13 @@ class Square(Rectangle):
     @property
     def size(self):
         """Create a getter to retrieve the data"""
-        return self.__size
+        return self.width
 
     @size.setter
     def size(self, value):
         """Create a setter to protect data and set it"""
         self.width = value
         self.height = value
-        self.__size = value
 
     def update(self, *args, **kwargs):
         """@args - a pointer to a list of arguments
