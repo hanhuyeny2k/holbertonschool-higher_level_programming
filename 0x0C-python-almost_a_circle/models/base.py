@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-import json
 """
 Define Base class
 
 """
+import json
 
 
 class Base:
