@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# lists all states with a name starting with N (upper N) from the database
+# Take an argument and displays all values in the states table match the name
 import MySQLdb
 import sys
 
@@ -17,7 +17,7 @@ if __name__ == "__main__":
 
     cur = db.cursor()
     cur.execute("SELECT * FROM states " +
-                "where name = '{}' ".format(state_name_search) +
+                "where binary name = '{}' ".format(state_name_search) +
                 "ORDER BY id ASC")
     for row in cur.fetchall():
         print(row)
