@@ -10,16 +10,15 @@ if __name__ == "__main__":
     usr = sys.argv[1]
     passwd = sys.argv[2]
     db_name = sys.argv[3]
-    state_name_search = sys.argv[4]
+    state_name = sys.argv[4]
     engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'
                            .format(usr, passwd, db_name, pool_pre_ping=True))
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    for state in session.query(State).order_by(State.id).all():
-        if state.name == state_name_search:
-            print("{}".format(state.id))
-            break
-    if state.name is None or state.name != state_name_search:
+    states = session.query(State).filter(State.name == state_name).first()
+    if states:
+        print("{}".format(states.id))
+    else:
         print("Not found")
     session.close()
