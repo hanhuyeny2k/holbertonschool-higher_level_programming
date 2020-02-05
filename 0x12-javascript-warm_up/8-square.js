@@ -5,7 +5,7 @@ if (isNaN(myVar)) {
 } else {
   let row = '';
   for (let i = 0; i < myVar; i++) {
-    row += '#';
+    row += 'X';
   }
   for (let i = 0; i < myVar; i++) {
     console.log(row);
